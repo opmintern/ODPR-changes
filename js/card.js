@@ -1,5 +1,5 @@
 function main() {
-    $.ajax({method: 'GET', url: 'https://data.austintexas.gov/resource/8qty-vat2.json'})
+    $.ajax({method: 'GET', url: 'https://data.ct.gov/resource/j6fx-6c5x.json'})
         .done(function(data, status) {
             console.log('DONE: Status is ', status)
             renderReport(data);
@@ -8,7 +8,7 @@ function main() {
             console.error('fail', status, err);
         });
 
-    $.ajax({method: 'GET', url: 'https://data.austintexas.gov/api/views/8qty-vat2.json'})
+    $.ajax({method: 'GET', url: 'https://data.ct.gov/resource/j6fx-6c5x.json'})
         .done(function(data, status) {
             console.log('DONE: Status is ', status)
             renderReportMetadata(data);
@@ -31,13 +31,13 @@ function renderReportMetadata(data) {
 
 function renderReport(data) {
     function scoreColor(status) {
-        if (['submitted', 'completed'].indexOf(status) !== -1) {
+        if (['YES'].indexOf(status) !== -1) {
             return 'green';
         }
-        else if (['in progress'].indexOf(status) !== -1) {
+        else if (['NA'].indexOf(status) !== -1) {
             return 'yellow';
         }
-        else if (['not started', 'not yet', 'unknown'].indexOf(status) !== -1) {
+        else if (['NO'].indexOf(status) !== -1) {
             return 'red';
         }
         else {
@@ -48,17 +48,17 @@ function renderReport(data) {
     var source = $('#card-template').html();
     var template = Handlebars.compile(source);
 
-    var cardsHTML = data.map(function(dept) {
+    var cardsHTML = data.map(function(acronym) {
         var scores = {};
-        ['liaison', 'inventory', 'plans', 'publication'].map(function(category) {
-            scores[category] = {text: dept[category], color: scoreColor(dept[category])};
+        ['ado', 'published_initial_datastes', 'published_initial_datasets', 'enterprise_data_inventory_status'].map(function(category) {
+            scores[category] = {text: acronym[category], color: scoreColor(agency[category])};
         });
 
-        var imgFilename = dept.dept.toLowerCase().replace(/\s+/g, '-');
+        var imgFilename = acronym.acronym.toLowerCase().replace(/\s+/g, '-');
         var imgPath = 'img/' + imgFilename + '.svg';
 
         var context = {
-            department: dept.dept,
+            department: acronym.acronym,
             scores: scores,
             image: imgPath,
             data: data,

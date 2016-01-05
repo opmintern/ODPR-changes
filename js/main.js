@@ -1,7 +1,7 @@
 "use strict"
 
 function main() {
-    $.ajax({ method: 'GET', url: 'https://data.austintexas.gov/resource/8qty-vat2.json' })
+    $.ajax({ method: 'GET', url: 'https://data.ct.gov/resource/j6fx-6c5x.json' })
         .done(function(data, status) {
             console.log('DONE: Status is ', status)
             renderReport(data);
@@ -9,7 +9,7 @@ function main() {
             console.error('fail', status, err);
         });
 
-    $.ajax({ method: 'GET', url: 'https://data.austintexas.gov/api/views/8qty-vat2.json' })
+    $.ajax({ method: 'GET', url: 'https://data.ct.gov/resource/j6fx-6c5x.json' })
         .done(function(data, status) {
             console.log('DONE: Status is ', status)
             renderReportMetadata(data);
@@ -27,7 +27,7 @@ function renderReportMetadata(data) {
 }
 
 function renderReport(data) {
-    $(".dept-count").text(data.length);
+    $(".acronym-count").text(data.length);
 
 
     // for (var i = 0; i < data.length; i++) {
@@ -43,17 +43,17 @@ function renderReport(data) {
     var source    = $("#row-template").html(),
         template  = Handlebars.compile(source);
 
-    var rowsHTML = data.map(function(dept) {
+    var rowsHTML = data.map(function(acronym) {
         var scores      = {},
-            imgFilename = dept.dept.toLowerCase().replace(/\s+/g, '-'),
+            imgFilename = acronym.acronym.toLowerCase().replace(/\s+/g, '-'),
             imgPath     = 'img/' + imgFilename + '.svg',
-            context     = { department: dept.dept,
+            context     = { acronym: acronym.acronym,
                             scores:     scores,
                             image:      imgPath,
                             data:       data };
         
-        ['liaison', 'inventory', 'plans', 'publication'].map(function(category) {
-            scores[category] = {text: dept[category], color: scoreColor(dept[category])};
+        ['ado', 'submitted_initial_datasets', 'published_initial_datasets', 'enterprise_data_inventory_status'].map(function(category) {
+            scores[category] = {text: acronym[category], color: scoreColor(acronym[category])};
         });
 
         console.log(scores)
@@ -79,9 +79,9 @@ function renderReport(data) {
     // };
 
     insertSVGIcon(".liaison-score", liaisonIcon);
-    insertSVGIcon(".inventory-score", inventoryIcon);
-    insertSVGIcon(".plans-score", planIcon);
-    insertSVGIcon(".publication-score", publishIcon);
+    insertSVGIcon(".inventory-score", planIcon);
+    insertSVGIcon(".plans-score", publishIcon);
+    insertSVGIcon(".publication-score", inventoryIcon);
 
 }
 
@@ -90,17 +90,17 @@ function insertSVGIcon(selector, icon){
 }
 
 function scoreColor(status) {
-    if (['submitted', 'completed'].indexOf(status) !== -1) {
+    if (['YES'].indexOf(status) !== -1) {
         return 'green';
     }
-    else if (['in progress'].indexOf(status) !== -1) {
+    else if (['NA'].indexOf(status) !== -1) {
         return 'yellow';
     }
-    else if (['not started', 'not yet', 'unknown'].indexOf(status) !== -1) {
+    else if (['NO'].indexOf(status) !== -1) {
         return 'red';
     }
     else {
-        return 'gray';
+        return 'yellow';
     }
 }
 

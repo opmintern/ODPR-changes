@@ -1,13 +1,9 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
-
 body {
     margin: 0;
     padding: 0 5px 30px;
@@ -16,13 +12,10 @@ body {
     background: #f0eeee;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     color: #a36a09;
     font-weight: normal;
     text-align: center;
-    line-height: 1.2em;
 }
 
 h2 {
@@ -33,8 +26,7 @@ p {
     margin: 7px 0;
 }
 
-ol,
-li {
+ol, li {
     margin: 5px 0;
 }
 
@@ -42,7 +34,7 @@ li {
     font-size: 1em;
     line-height: 1.9em;
     background: gray;
-    display: block;
+    display: block;;
     margin: 0;
     padding: 30px 0;
     background: #f0eeee;
@@ -82,11 +74,7 @@ li {
 }
 
 .symbols-key {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -103,7 +91,6 @@ li {
 .symbols-icon {
     height: 60px;
 }
-
 .symbols-icon svg path {
     fill: #fff;
 }
@@ -118,20 +105,10 @@ li {
 }
 
 .report-container {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
     align-self: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
     padding: 0 5%;
 }
@@ -178,36 +155,26 @@ li {
 
 .first-column-score {
     width: 30%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    padding: 5px;
 }
 
 .score-row {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     height: 100px;
     text-align: center;
     height: auto !important;
     border: 2px solid transparent;
 }
+
+.score-row:hover {
+    border: 2px solid #77787C;
+}
+
+
 
 .item {
     width: 100%;
@@ -216,32 +183,16 @@ li {
 .score {
     padding: 5px;
     margin-right: 2px;
-    margin-bottom: 2px;
     border-width: 0;
     border-style: solid;
     border-radius: 5px;
     width: 20%;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
     align-self: auto;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-flex: 1 1 0px;
-    -ms-flex: 1 1 0px;
-    flex: 1 1 0px;
 }
 
 .score-title {
@@ -282,7 +233,6 @@ li {
 .metric-icon {
     height: 30px;
 }
-
 .metric-icon path {
     fill: rgba(0, 0, 0, 0.5);
 }
@@ -291,58 +241,23 @@ li {
     text-align: center;
 }
 
-/*------------------------------*/
-/* Media Queries - Responsive Layout */
-/*------------------------------*/
-
-/* Large desktop */
-
-@media (min-width: 1200px) {}
-
-/* Portrait tablet to landscape and desktop */
-
-@media (min-width: 768px) and (max-width: 979px) {}
-
-/* Landscape phone to portrait tablet */
-@media only screen and (max-width: 867px) {
+@media only screen and (max-width : 867px) {
     .container {
         padding: 0;
     }
-
     .first-column {
         width: 40%;
     }
-
     .score {
         width: 15%;
     }
 }
 
-@media (max-width: 767px) {}
-
-@media only screen and (max-width: 525px) {
+@media only screen and (max-width : 525px) {
     .grid-header {
         font-weight: bold;
         font-size: .8em;
         margin-bottom: 5px;
         text-decoration: underline;
     }
-
-    .first-column-score {
-        width: 100%;
-    }
-
-    .first-column-score img {
-        -webkit-order: -1;
-        -ms-flex-order: -1;
-        order: -1;
-    }
-
-    .score-row {
-        margin-bottom: 10px;
-    }
 }
-
-/* Landscape phones and down */
-
-@media (max-width: 480px) {}

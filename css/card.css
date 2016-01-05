@@ -124,10 +124,11 @@ h2 {
 
 .dept-name {
     color: #3f3f51;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
     margin: 5px 0;
     padding: 0;
+	word-wrap: break-word;
 }
 
 .score-row {
@@ -164,6 +165,7 @@ h2 {
     font-size: 14px;
     color: #3f3f51;
     margin: 0;
+	word-wrap: break-word;
 }
 
 .metric-name {
