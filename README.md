@@ -1,48 +1,34 @@
-# Open Data Progress Report
+# CT Open Data Progress Report
 
 ## Overview
 
-[Open Austin](https://open-austin.org) believes 21st century governance can work for the people :muscle:. We build open source technology and organize volunteers to envision government services made simple, effective, and accessible.
+Connecticut's Open Data Initiative kicked off in February 2014 where State Agencies were required to increase the amount of open data published by each State Agency.
 
-Information is a service of our government. Data is a service of our government. [(See FOIA)](https://en.wikipedia.org/wiki/Freedom_of_Information_Act_(United_States)) 
+1. designate an Agency Data Officer
+2. submit initial datasets
+3. publish initial datasets
+4. conduct and enterprise data inventory 
 
-Accessible data promotes better decisions and planning... And its fun to geek out on :eyeglasses:.
-
-Austin's City Manager kicked off an "Open Data Initiative 2.0" in April 2015 ([see the Memo](http://www.open-austin.org/wp-content/uploads/2013/09/20150408_Open_Data_Initiative_2_0.pdf)). Every city department was asked to:
-
-1. designate an open data liaison
-2. conduct a data inventory
-3. submit an open data participation plan
-4. publish at least three new datasets to the City’s open data portal.  
-
-The initial 90-day sprint has concluded and published are the results.
+The purpose of this project is to track agency progress toward meeting the required goals of Connecticut's Open Data Intitiave
 
 ## Setup
 
-`git clone git@github.com:open-austin/open-data-progress-report.git`
+`git clone git@github.com:OpenDataCT/open-data-progress-report.git`
 
 ## Running locally
 
 No server necessary, just drag `index.html` into a browser and let javascript do the rest.
 
-## Team
+## Original Project
 
-This project includes contributions from:
+Thanks to [Open Austin](https://github.com/open-austin) for the creating this [progress report for the City of Austin](http://open-austin.github.io/open-data-progress-report/). The CT Prgress report was forked from [this project](https://github.com/open-austin/open-data-progress-report)
 
-- [@sharlalikesyou](https://github.com/sharlalikesyou)
-- [@luqmaan](https://github.com/luqmaan)
-- [@carissamelanson](https://github.com/carissamelanson)
-- [@mateoclarke](https://github.com/mateoclarke)
+
 
 ## Errors / Bugs 
 
-If something isn't quite right, [let us know](https://github.com/open-austin/open-data-progress-report/issues/new). Or if you'd like to try to fix it yourself but you're not quite sure how, just open [an issue](https://github.com/open-austin/open-data-progress-report/issues?q=is%3Aissue+is%3Aopen) and ask.
+If something isn't quite right, [let us know](https://github.com/opendatact/open-data-progress-report/issues/new). 
 
-## Pull Requests
-
-We :heart: Pull Requests. 
-
-We could use some help with [these things](https://github.com/open-austin/open-data-progress-report/labels/help%20wanted).
 
 ## Contributing
 
