@@ -47,7 +47,7 @@ function renderReport(data) {
         var scores      = {},
             imgFilename = agency.agency.toLowerCase().replace(/\s+/g, '-'),
             imgPath     = 'img/' + imgFilename + '.svg',
-            context     = { acronym: agency.agency,
+            context     = { agency: agency.agency,
                             scores:     scores,
                             image:      imgPath,
                             data:       data };
