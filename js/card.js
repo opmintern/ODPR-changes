@@ -48,7 +48,7 @@ function renderReport(data) {
     var source = $('#card-template').html();
     var template = Handlebars.compile(source);
 
-    var cardsHTML = data.map(function(acronym) {
+    var cardsHTML = data.map(function(agency) {
         var scores = {};
         ['ado', 'published_initial_datastes', 'published_initial_datasets', 'enterprise_data_inventory_status'].map(function(category) {
             scores[category] = {text: agency[category], color: scoreColor(agency[category])};
