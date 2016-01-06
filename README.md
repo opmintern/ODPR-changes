@@ -21,7 +21,7 @@ No server necessary, just drag `index.html` into a browser and let javascript do
 
 ## Original Project
 
-Thanks to [Open Austin](https://github.com/open-austin) for the creating this [progress report for the City of Austin](http://open-austin.github.io/open-data-progress-report/). The CT Prgress report was forked from [this project](https://github.com/open-austin/open-data-progress-report)
+Thanks to [Open Austin](https://github.com/open-austin) for the creating this [progress report for the City of Austin](http://open-austin.github.io/open-data-progress-report/). The CT Progress Report was forked from [this project](https://github.com/open-austin/open-data-progress-report)
 
 
 
