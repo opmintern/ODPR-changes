@@ -51,14 +51,14 @@ function renderReport(data) {
     var cardsHTML = data.map(function(acronym) {
         var scores = {};
         ['ado', 'published_initial_datastes', 'published_initial_datasets', 'enterprise_data_inventory_status'].map(function(category) {
-            scores[category] = {text: acronym[category], color: scoreColor(agency[category])};
+            scores[category] = {text: agency[category], color: scoreColor(agency[category])};
         });
 
-        var imgFilename = acronym.acronym.toLowerCase().replace(/\s+/g, '-');
+        var imgFilename = agency.agency.toLowerCase().replace(/\s+/g, '-');
         var imgPath = 'img/' + imgFilename + '.svg';
 
         var context = {
-            department: acronym.acronym,
+            department: agency.agency,
             scores: scores,
             image: imgPath,
             data: data,
