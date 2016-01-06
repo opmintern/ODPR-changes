@@ -43,11 +43,11 @@ function renderReport(data) {
     var source    = $("#row-template").html(),
         template  = Handlebars.compile(source);
 
-    var rowsHTML = data.map(function(acronym) {
+    var rowsHTML = data.map(function(agency) {
         var scores      = {},
-            imgFilename = acronym.acronym.toLowerCase().replace(/\s+/g, '-'),
+            imgFilename = agency.agency.toLowerCase().replace(/\s+/g, '-'),
             imgPath     = 'img/' + imgFilename + '.svg',
-            context     = { acronym: acronym.acronym,
+            context     = { acronym: agency.agency,
                             scores:     scores,
                             image:      imgPath,
                             data:       data };
@@ -100,7 +100,7 @@ function scoreColor(status) {
         return 'red';
     }
     else {
-        return 'grey';
+        return 'gray';
     }
 }
 
