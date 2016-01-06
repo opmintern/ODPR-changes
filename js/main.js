@@ -27,7 +27,7 @@ function renderReportMetadata(data) {
 }
 
 function renderReport(data) {
-    $(".acronym-count").text(data.length);
+    $(".agency-count").text(data.length);
 
 
     // for (var i = 0; i < data.length; i++) {
