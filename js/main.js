@@ -53,7 +53,7 @@ function renderReport(data) {
                             data:       data };
         
         ['ado', 'submitted_initial_datasets', 'published_initial_datasets', 'enterprise_data_inventory_status'].map(function(category) {
-            scores[category] = {text: acronym[category], color: scoreColor(acronym[category])};
+            scores[category] = {text: agency[category], color: scoreColor(agency[category])};
         });
 
         console.log(scores)
@@ -100,7 +100,7 @@ function scoreColor(status) {
         return 'red';
     }
     else {
-        return 'yellow';
+        return 'grey';
     }
 }
 
