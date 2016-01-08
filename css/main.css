@@ -13,7 +13,7 @@ body {
 }
 
 h1, h2, h3 {
-    color: #a36a09;
+    color: ##26609B;
     font-weight: normal;
     text-align: center;
 }
@@ -58,7 +58,7 @@ ol, li {
 }
 
 .open-atx-logo {
-    display: block;
+    display: flex;
     padding: 10px 0 10px;
 }
 
