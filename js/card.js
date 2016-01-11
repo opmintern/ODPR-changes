@@ -50,7 +50,7 @@ function renderReport(data) {
 
     var cardsHTML = data.map(function(agency) {
         var scores = {};
-        ['ado', 'published_initial_datastes', 'published_initial_datasets', 'enterprise_data_inventory_status'].map(function(category) {
+        ['ado', 'published_initial_datasets', 'submitted_initial_datasets', 'enterpise_data_inventory_status'].map(function(category) {
             scores[category] = {text: agency[category], color: scoreColor(agency[category])};
         });
 
