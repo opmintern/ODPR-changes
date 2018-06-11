@@ -26,7 +26,9 @@ html {
     text-decoration: none;
     font-size: 17px;
 }
-
+  .ctod{
+    width: 50px;
+  }
 /* Change the color of links on hover */
 .topnav a:hover {
     background-color: #ddd;
