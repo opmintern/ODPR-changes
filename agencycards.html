@@ -1,78 +1,21 @@
 <div class="panel panel-default">
     <!--state-title-heading-->
     <div class="panel-heading">
-        <!-- possible syntax error-->
-        <h1 class="agency-title" id="{{agency}}-"ADO"><a href="#{{agency}}-Inventory Data">{{agency}}: "Data Plan"</a></h1>
+        <!-- possible syntax error last one-->
+        <h1 class="agency-title" id="{{agency}}-"ADO"><a href="#{{agency}}-Inventory Data">{{agency}}: ("Data Plan")</a></h1>
     </div>
     <div class="panel-body">
       <div class="data-icons">
         <p><strong>Data Breakdown:</strong></p>
-            <ul class="availablilty icons">
-                <a data-toggle="tooltip" title data-original-title="{{existsCaption}}">
-                    <li>
-                        <i class="fa fa-cube datapole {{exists}}"></i>
-                    </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{digitizedCaption}}">
-                    <li>
-                        <i class="fa fa-desktop datapole {{digitized}}"></i>
-                    </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{isPublicCaption}}">
-                    <li>
-                        <i class="fa fa-users datapole {{isPublic}}"></i>
-                    </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{freeCaption}}">
-                    <li>
-                        <i class="fa fa-money datapole {{free}}"></i>
-                    </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{onlineCaption}}">
-                    <li>
-                        <i class="fa fa-eye datapole {{online}}"></i>
-                    </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{machineCaption}}">
-                    <li>
-                        <i class="fa fa-keyboard-o datapole {{machine}}"></i>
-                    </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{bulkCaption}}">
-                    <li>
-                        <i class="fa fa-files-o datapole {{bulk}}"></i>
-                    </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{openLicenseCaption}}">
-                    <li>
-                        <i class="fa fa-share-alt datapole {{openLicense}}"></i>
-                    </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{freshCaption}}">
-                    <li>
-                        <i class="fa fa-clock-o datapole {{fresh}}"></i>
-                    </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{inRepoCaption}}">
-                    <li>
-                        <i class="fa fa-archive datapole {{inRepo}}"></i>
-                     </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{verifiableCaption}}">
-                    <li>
-                        <i class="fa fa-check-circle datapole {{verifiable}}"></i>
-                     </li>
-                </a>
-                <a data-toggle="tooltip" title data-original-title="{{completeCaption}}">
-                    <li>
-                        <i class="fa fa-circle-o datapole {{complete}}"></i>
-                     </li>
-                </a>
-            </ul>
+        <p><strong>Status:</strong> {{"Status"}}</p>     
+      </div>
+        <div class="ADO">
+            <p><strong>ADO Contact Information:</strong> {{"ADO-NAME"}}</p>
+            <p><strong>Phone:</strong> {{"ADO-PHONE"}}</p>
+            <p><strong>Email:</strong> {{"ADO-NAME"}}</p>
         </div>
-        <p><strong>Grade:</strong> {{"Grade"}} ({{"Score"}}%)</p>
-        <p><strong>Description:</strong> {{"Description"}}</p>
-        <div class="row">
+        <div class="Inventory Data">
+           <div class="row">
             <div class="col-sm-4">
                 <div class="row">
                     <div class="col-xs-12">
@@ -90,12 +33,7 @@
                     <div class="col-xs-12">
                         <p><strong>Public:</strong> {{"Public"}}</p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>Without cost:</strong> {{"Free"}}</p>
-                    </div>
-                </div>
+                </div>     
             </div>
             <div class="col-sm-4">
                 <div class="row">
@@ -103,18 +41,8 @@
                         <p><strong>Online:</strong> {{"Online"}}</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>Machine-readable:</strong> {{"Machine readable"}}</p>
-                    </div>
-                </div>
             </div>
             <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>Available in bulk:</strong> {{"Available in bulk"}}</p>
-                    </div>
-                </div>
                 <div class="row">
                     <div class="col-xs-12">
                         <p><strong>No license restrictions:</strong> {{"No restrictions"}}</p>
@@ -133,19 +61,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>Verifiable:</strong> {{"Verifiable"}}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>Complete:</strong> {{"Complete"}}</p>
-                    </div>
-                </div>
-            </div>
         </div>
+        <div class="Data Plan">
+          <p><strong>Plan:</strong> {{"#"}}</p>
+        </div>
+        
         <p style="clear: left"><strong>Comments:</strong> {{"Comments"}}</p>
         <a href="{{"Link"}}">{{"Link"}}</a>
         </br>
