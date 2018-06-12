@@ -18,7 +18,7 @@ html {
 }
 
 /* Style the links inside the navigation bar */
-.navbar-header navli a {
+.navbar1 a {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -26,8 +26,8 @@ html {
     text-decoration: none;
     font-size: 17px;
 }
-  .navimg{
-    width: 100%;
+  .navimg {
+    width: 50%;
     height: 75px;
     font-size: 25px;
     /*color: #8f8f8f;*/
@@ -38,13 +38,13 @@ html {
   }
 
 /* Change the color of links on hover */
-.navbar-header navli a:hover {
+.navbar1 a:hover {
     background-color: #ddd;
     color: black;
 }
 
 /* Add a color to the active/current link */
-.navbar-header navli a.active {
+.navbar1 a.active {
     background-color: #4CAF50;
     color: white;
 }
