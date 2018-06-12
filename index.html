@@ -35,33 +35,21 @@
 		</nav>
 	<\header>
     <body>
-        <div class="hero">
-            <div class="content">
-                <h2> Agency Data Mangagement Progress Report Card</h2>
-                <div class="description">
-                    Public Act 18-??? requires each executive branch agency to begin to manage data as an asset. In addition, it bolsters CT's efforts associated with open data.
-                    <p>Agencies are required to:</p>
-                    <ol>
-                        <li>designate an <b>Agency Data Officer (ADO)</b>,</li>
-                        <li>inventory <b>high value data</b>, and</li>
-                        <li>create <b>open data access plans</b></li>
-                    </ol>
-                    <p>Agencies continue to work with <a href="http://www.ct.gov/opm/cwp/view.asp?a=2998&Q=566940&PM=1" target="_blank">OPM</a> to meet these goals, and we will update this dataset regularly to reflect their progress until further notice.</p>
-                </div>
-            </div>
-        </div>
         <div class="report-header">
-            <h2 class="secondary-title">Ahency Progress</h2>
+            <h2 class="secondary-title">Agency Progress</h2>
 
             <script id="metadata-template" type="text/x-handlebars-template">
                 <p><a href="https://data.ct.gov/dataset/Agency-Status/pb5x-kf8z" target="_blank">Source data</a> last updated {{updated}}</p></i>
             </script>
         </div>
+	<!---First row Agency,Designate Ado, --->
         <div class="report-container">
             <div class="item grid-header">
                 <div class="score-row">
                     <div class="first-column-score">
-                        <p class="symbols-text">Agency</p>
+                        <p class="symbols-text">
+				<a href="#Agencylist">Agency<\a>
+			</p>
                     </div>
                     <div class="score">
                         <p class="symbols-text">Designate ADO</p>
@@ -72,21 +60,19 @@
                     <div class="score">
                         <p class="symbols-text">Data Plan</p>
                     </div>
-
                 </div>
             </div>
-
         </div>
         
         <script id="row-template" type="text/x-handlebars-template">
             <div class="item"> 
                 <div class="score-row"> 
                     <div class="first-column-score">
-                        <p class="dept-name">{{agency}}</p> 
+                       <p class="dept-name">{{agency}}</p>
                        <!--img class="dept-icon" src="{{image}}"/-->
                     </div>
                     <div class="score liaison-score {{scores.ado.color}}">
-                        <p class="score-text">{{scores.ado.text}}</p>
+                        <p class="score-text">{{scores.ado.text}}<a href="agencycards.html"></a></p>
                     </div>
                     <div class="score publication-score {{scores.enterpise_data_inventory_status.color}}">
                         <p class="score-text">{{scores.enterpise_data_inventory_status.text}}</p>
