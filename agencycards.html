@@ -7,81 +7,81 @@
         <meta name="viewport" content="width=device-width,intial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="/common/css/font-awesome.css">                  
-        <link rel="stylesheet" href="/common/css/common.css">
-                  
-    </head>                      
-<div class="panel panel-default">
-    <!--state-title-heading-->
-    <div class="panel-heading">
-        <!-- possible syntax error last one-->
-        <h1 class="agency-title" id="{{agency}}-"ADO"><a href="#{{agency}}-Inventory Data">{{agency}}: ("Data Plan")</a></h1>
-    </div>
-    <div class="panel-body">
-      <div class="data-icons">
-        <p><strong>Data Breakdown:</strong></p>
-        <p><strong>Status:</strong> {{"Status"}}</p>     
-      </div>
-        <div class="ADO">
-            <p><strong>ADO Contact Information:</strong> {{"ADO-NAME"}}</p>
-            <p><strong>Phone:</strong> {{"ADO-PHONE"}}</p>
-            <p><strong>Email:</strong> {{"ADO-NAME"}}</p>
-        </div>
-        <div class="Inventory Data">
-           <div class="row">
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>Exists:</strong> {{"Exists"}}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>Digitized:</strong> {{"Digitized"}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>Public:</strong> {{"Public"}}</p>
-                    </div>
-                </div>     
-            </div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>Online:</strong> {{"Online"}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>No license restrictions:</strong> {{"No restrictions"}}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>Up-to-date:</strong> {{"Up-to-date"}}</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <p><strong>In the state repository:</strong> {{"In the state repository"}}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Data Plan">
-          <p><strong>Plan:</strong> {{"#"}}</p>
-        </div>
-        
-        <p style="clear: left"><strong>Comments:</strong> {{"Comments"}}</p>
-        <a href="{{"Link"}}">{{"Link"}}</a>
-        </br>
-        <small>This summary last updated on: {{"Last updated"}}</small>
-    </div>
-</div>
+        <link rel="stylesheet" href="/common/css/common.css">                  
+    </head>
+	<body>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<!-- possible syntax error last one-->
+				<h1 class="agency-title" id="{{agency}}-"ADO"><a href="#{{agency}}-Inventory Data">{{agency}}: ("Data Plan")</a></h1>
+        	</div>
+		</div>
+        <div class="panel-body">
+        	<div class="data-icons">
+				<p><strong>Data Breakdown:</strong></p>
+				<p><strong>Status:</strong> {{"Status"}}</p>     
+			</div>
+			<div class="ADO">
+				<p><strong>ADO Contact Information:</strong> {{"ADO-NAME"}}</p>
+				<p><strong>Phone:</strong> {{"ADO-PHONE"}}</p>
+				<p><strong>Email:</strong> {{"ADO-NAME"}}</p>
+			</div>
+			<div class="Inventory Data">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<p><strong>Exists:</strong> {{"Exists"}}</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p><strong>Digitized:</strong> {{"Digitized"}}</p>
+							</div>
+						</div>
+					</div> <!--col-sm4-->
+					<div class="col-sm-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<p><strong>Public:</strong> {{"Public"}}</p>
+							</div>
+						</div>     
+					</div>
+					<div class="col-sm-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<p><strong>Online:</strong> {{"Online"}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<p><strong>No license restrictions:</strong> {{"No restrictions"}}</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="row">
+							<div class="col-xs-12">
+								<p><strong>Up-to-date:</strong> {{"Up-to-date"}}</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<p><strong>In the state repository:</strong> {{"In the state repository"}}</p>
+							</div>
+						</div>
+					</div>
+				</div><!--end row class-->
+			</div> <!--end Inventory Data-->
+			<div class="Data Plan">
+			  <p><strong>Plan:</strong> {{"#"}}</p>
+			</div>
+            <p style="clear: left"><strong>Comments:</strong> {{"Comments"}}</p>
+            <a href="{{"Link"}}">{{"Link"}}</a>
+            </br>
+            <small>This summary last updated on: {{"Last updated"}}</small>
+		</div> <!--Panel body-->
+	</body>
 </html>
