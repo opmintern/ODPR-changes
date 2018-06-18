@@ -7,6 +7,17 @@
  -webkit-text-size-adjust:100%;
  -ms-text-size-adjust:100%
 }
+ .navimg {
+    width: 50%;
+    height: 10px;
+    font-size: 25px;
+    /*color: #8f8f8f;*/
+    display: block;
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 0px;
+  }
+
 body {
  margin:0
 }
