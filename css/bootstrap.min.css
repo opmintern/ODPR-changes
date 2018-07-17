@@ -25,6 +25,7 @@ body {
 }
 a.side{
  padding: 30px 20px 30px 20px;
+ display: inline-block;
 }
 .topnav a{
   float: left;
@@ -46,12 +47,6 @@ a.side{
   display: inline-block;  
   color: #9d9d9d;
   padding: 30px 20px 20px 20px;
-}
-
-.container{
-  position: absolute;
-  right: 1px;
-  display: inline-block;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
  display:block
