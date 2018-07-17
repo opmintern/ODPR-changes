@@ -22,6 +22,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #333;
+  padding: 0px 0px;
 }
 a.side{
  padding: 30px 20px 30px 20px;
