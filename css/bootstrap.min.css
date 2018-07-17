@@ -7,19 +7,51 @@
  -webkit-text-size-adjust:100%;
  -ms-text-size-adjust:100%
 }
- .navimg {
-    width: 50%;
-    height: 10px;
-    font-size: 25px;
-    /*color: #8f8f8f;*/
-    display: block;
-    margin-top: 0;
-    line-height: 1;
-    margin-bottom: 0px;
-  }
-
 body {
- margin:0
+  margin: 0;
+  font-family: sans-serif, Arial, Helvetica;
+}
+.logo{
+  position: relative;
+  width: 100px;
+  height: 70px;
+  padding:5px 10px 0px 10px;
+  
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+a.side{
+ padding: 30px 20px 30px 20px;
+}
+.topnav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+
+.topnav a.side:hover {
+  background-color:grey;
+  color: black;
+}
+
+.topnav a.active {
+  font-size: 20px;
+  font-weight: normal;
+  display: inline-block;  
+  color: #9d9d9d;
+  padding: 30px 20px 20px 20px;
+}
+
+.container{
+  position: absolute;
+  right: 1px;
+  display: inline-block;
 }
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
  display:block
